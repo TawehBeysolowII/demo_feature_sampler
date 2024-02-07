@@ -1,0 +1,36 @@
+{
+    "uri": "wss://ws-feed.exchange.coinbase.com", 
+
+    "max_queue_size": 10000, 
+    "dollar_bar_size": 250e3, 
+    "public_key": "onhsaOGGGIqbc7DK", 
+    "secret_key": "L9VnYiDrlsGCe7QHYl1hxDml3ha6RrFR",
+    "fix_uri": "tcp+ssl://fix-ord.exchange.coinbase.com:6121",
+    "quickfix_dictionary": "/Users/tawehbeysolow/Downloads/cb_fix_dict/order-entry/FIX50-prod-sand.xml", 
+    
+    "subscribe_msg": {
+    "type": "subscribe",
+    "product_ids": [
+        "ETH-USD"
+    ],
+    "channels": [
+        {
+            "name": "ticker",
+            "product_ids": [
+                "ETH-USD"
+            ]
+        }
+    ]
+
+    }, 
+
+    "trade_msg_format":  { 
+
+        "size": "last_size", 
+        "id": "trade_id", 
+        "timestamp": "time"
+
+    }
+    
+     
+}

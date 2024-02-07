@@ -1,0 +1,5 @@
+{
+
+    "uri": "wss://api.gemini.com/v1/marketdata/ethusd?trades=true"
+
+}
