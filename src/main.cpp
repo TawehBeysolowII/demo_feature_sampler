@@ -29,9 +29,6 @@ int main(int argc, char* argv[]) {
     vector<thread> _threads; 
     json observation; 
 
-    cout << "Initializing FIX Connection to " + exchange << endl; 
-
-
     cout << "Initializing websocket client and connecting to " + exchange + "...\n";
 
     thread t1(WebsocketUtilities::start_websocket, 
